@@ -1,0 +1,11 @@
+{
+    "release_version": "2.0.0",
+    "release_date": "unreleased",
+    "tickets": [
+        {
+            "ticket_number": "TCP-4567",
+            "ticket_link": "https:\/\/atlassian.cc.toom.de\/browse\/TCP-4567",
+            "description": "My other feature"
+        }
+    ]
+}

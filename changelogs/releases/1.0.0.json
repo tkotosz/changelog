@@ -1,0 +1,11 @@
+{
+    "release_version": "1.0.0",
+    "release_date": "2018-11-09",
+    "tickets": [
+        {
+            "ticket_number": "TCP-1234",
+            "ticket_link": "https:\/\/atlassian.cc.toom.de\/browse\/TCP-1234",
+            "description": "My awesome feature"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "tkotosz/changelog",
+    "type": "project",
+    "repositories": {
+        "tkotosz/cli-app-builder": {
+            "type": "git",
+            "url": "git@github.com:tkotosz/cli-app-builder.git"
+        }
+    },
+    "require": {
+        "tkotosz/cli-app-builder": "dev-master",
+        "symfony/yaml": "^4.1"
+    },
+    "authors": [
+        {
+            "name": "Tibor Kotosz",
+            "email": "kotosy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Tkotosz\\Changelog\\": "src"
+        }
+    }
+}

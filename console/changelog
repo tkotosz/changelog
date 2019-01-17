@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Tkotosz\Changelog\Configurator\RegisterApplicationConfigurationConfigurator;
+use Tkotosz\CliAppBuilder\CliAppBuilder;
+
+$cliAppBuilder = new CliAppBuilder();
+
+$cliApp = $cliAppBuilder->setApplicationId('changelog_app')
+    ->setApplicationName('Changelog')
+    ->setApplicationVersion('v1.0')
+    ->enableAutoServiceRegistration('Tkotosz\\Changelog\\', __DIR__ . '/../src/Tkotosz/Changelog/*')
+    ->enableConsoleCommandAutoRegistration()
+    ->addConfigurator(new RegisterApplicationConfigurationConfigurator())
+    ->build();
+
+$cliApp->run();
